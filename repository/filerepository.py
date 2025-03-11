@@ -39,3 +39,20 @@ class MasinaFileRepository:
         if sol is None:
             raise ValueError("Token not found")
         return sol
+
+    def find_by_token_binary(self, token):
+        low = 0
+        high = len(self.lista_masini) - 1
+
+        while low <= high:
+            mid = (low + high) // 2
+            current_token = self.lista_masini[mid].tokenMasina
+
+            if current_token == token:
+                return self.lista_masini[mid]
+            elif current_token < token:
+                low = mid + 1
+            else:
+                high = mid - 1
+
+        raise ValueError("Token not found")

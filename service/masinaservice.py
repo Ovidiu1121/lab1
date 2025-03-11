@@ -8,7 +8,7 @@ class MasinaService:
         try:
             masina = None
             if eficient_ineficient == 1:
-                pass
+                masina = self.__masina_repo.find_by_token_binary(token)
             else:
                 masina = self.__masina_repo.find_by_token_secvential(token)
             return masina
