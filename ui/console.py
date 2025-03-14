@@ -7,6 +7,8 @@ class AppConsole:
                            "func": self.__afiseaza_masini},
                           {"name" : "SEARCH tokenMasina",
                            "func" : self.__search_token_masina},
+                          {"name": "SORT tokenMasina",
+                           "func": self.__sort_token_masina},
                           {"name" : "SORT marca model",
                            "func" : self.__sort_marca_model},
                           {"name" : "SORT marca model tokenMasina",
@@ -22,14 +24,29 @@ class AppConsole:
         masina = self.__masina_service.find_by_token(token, eficient_ineficient)
         print(masina)
 
+    def __print_masini(self, masini):
+        for masina in masini:
+            print(masina)
+
+    def __sort_token_masina(self, eficient_ineficient):
+        if eficient_ineficient == 2:
+            masini = self.__masina_service.sort_masini("tokenMasina")
+            self.__print_masini(masini)
+
     def __sort_marca_model(self, eficient_ineficient):
-        pass
+        if eficient_ineficient == 2:
+            masini = self.__masina_service.sort_masini("marca model")
+            self.__print_masini(masini)
 
     def __sort_marca_model_token_masina(self, eficient_ineficient):
-        pass
+        if eficient_ineficient == 2:
+            masini = self.__masina_service.sort_masini("marca model tokenMasina")
+            self.__print_masini(masini)
 
     def __sort_profit(self, eficient_ineficient):
-        pass
+        if eficient_ineficient == 2:
+            masini = self.__masina_service.sort_masini("profit")
+            self.__print_masini(masini)
 
     def __afisare_meniu(self):
         for index, elem in enumerate(self.__options):
@@ -65,7 +82,7 @@ class AppConsole:
                     raise ValueError("Invalid option")
 
                 print()
-                eficient_ineficient = self.__choose_eficient_ineficient()
+                eficient_ineficient = self.__choose_eficient_ineficient() if option > 1 else 1
                 self.__options[option - 1]["func"](eficient_ineficient)
                 self.__waitForX()
 

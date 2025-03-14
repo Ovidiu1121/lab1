@@ -25,11 +25,20 @@ class MasinaService:
     def __comparator_token_masina(self, a, b):
         return a > b
 
-    def sort_token_masina(self):
+    def __comparator_masini(self, a, b, criteriu):
+        if criteriu == "tokenMasina":
+            return a.tokenMasina > b.tokenMasina
+        if criteriu == "marca model":
+            return a.marca > b.marca or (a.marca == b.marca and a.model == b.model)
+        if criteriu == "marca model tokenMasina":
+            return a.marca > b.marca or (a.marca == b.marca and a.model > b.model or (a.model == b.model and a.tokenMasina == b.tokenMasina))
+        return a.getProfit() > b.getProfit()
+
+    def sort_masini(self, criteriu):
         lista_masini = self.__masina_repo.lista_masini
         for i in range(len(lista_masini) - 1):
             for j in range(i + 1, len(lista_masini)):
-                if self.__comparator_token_masina(lista_masini[i].token_masina, lista_masini[j].token_masina):
+                if self.__comparator_masini(lista_masini[i], lista_masini[j], criteriu):
                     aux = lista_masini[i]
                     lista_masini[i] = lista_masini[j]
                     lista_masini[j] = aux

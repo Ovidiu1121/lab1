@@ -29,5 +29,8 @@ class Masina:
     def pretVanzare(self):
         return self.__pretVanzare
 
+    def getProfit(self):
+        return self.__pretVanzare - self.pretAchizitie
+
     def __str__(self):
         return self.marca + " " + self.model + " " + self.tokenMasina + f" {self.pretAchizitie} {self.pretVanzare}\n"
