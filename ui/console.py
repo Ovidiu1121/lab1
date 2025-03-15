@@ -24,29 +24,36 @@ class AppConsole:
         masina = self.__masina_service.find_by_token(token, eficient_ineficient)
         print(masina)
 
+    def __print_time(self, time):
+        print(f"Timp: {time * 1000} milisecunde")
+
     def __print_masini(self, masini):
         for masina in masini:
             print(masina)
 
     def __sort_token_masina(self, eficient_ineficient):
         if eficient_ineficient == 2:
-            masini = self.__masina_service.sort_masini("tokenMasina")
+            masini, time = self.__masina_service.sort_masini("tokenMasina")
             self.__print_masini(masini)
+            self.__print_time(time)
 
     def __sort_marca_model(self, eficient_ineficient):
         if eficient_ineficient == 2:
-            masini = self.__masina_service.sort_masini("marca model")
+            masini, time = self.__masina_service.sort_masini("marca model")
             self.__print_masini(masini)
+            self.__print_time(time)
 
     def __sort_marca_model_token_masina(self, eficient_ineficient):
         if eficient_ineficient == 2:
-            masini = self.__masina_service.sort_masini("marca model tokenMasina")
+            masini, time = self.__masina_service.sort_masini("marca model tokenMasina")
             self.__print_masini(masini)
+            self.__print_time(time)
 
     def __sort_profit(self, eficient_ineficient):
         if eficient_ineficient == 2:
-            masini = self.__masina_service.sort_masini("profit")
+            masini, time = self.__masina_service.sort_masini("profit")
             self.__print_masini(masini)
+            self.__print_time(time)
 
     def __afisare_meniu(self):
         for index, elem in enumerate(self.__options):

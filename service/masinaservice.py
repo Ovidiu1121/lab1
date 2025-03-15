@@ -1,4 +1,4 @@
-
+import time
 
 class MasinaService:
     def __init__(self, masina_repo):
@@ -35,6 +35,7 @@ class MasinaService:
         return a.getProfit() > b.getProfit()
 
     def sort_masini(self, criteriu):
+        start_time = time.time()
         lista_masini = self.__masina_repo.lista_masini
         for i in range(len(lista_masini) - 1):
             for j in range(i + 1, len(lista_masini)):
@@ -42,4 +43,5 @@ class MasinaService:
                     aux = lista_masini[i]
                     lista_masini[i] = lista_masini[j]
                     lista_masini[j] = aux
-        return lista_masini
+        end_time = time.time()
+        return lista_masini, end_time - start_time
