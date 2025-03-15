@@ -1,4 +1,100 @@
-Chevrolet Malibu hohdf8h 4236 4199
-Chevrolet Silverado nd9j3bo 7693 7494
-Volvo 850 8h39dbv 2780 3290
-Toyota T100 nd938bn 7780 9080
+Nissan,Murano,431,1416,14617
+Chevrolet,Suburban 2500,38,5445,11448
+Lexus,LX,718,8497,12942
+Audi,A4,798,5097,10849
+Chevrolet,S10,552,6897,13093
+Scion,tC,626,9743,14483
+Ford,E-Series,410,1238,14705
+Dodge,Ram,484,1376,14394
+Toyota,4Runner,585,3675,14832
+Buick,Lucerne,741,8309,12564
+Volvo,940,515,2883,14461
+Nissan,Maxima,449,5899,10591
+Lexus,SC,873,5130,14774
+Saab,9-3,238,2860,14761
+Ford,Crown Victoria,534,1300,11694
+Pontiac,Firebird,70,6956,14275
+Honda,Prelude,738,4149,11769
+Porsche,924,811,2893,14181
+Ram,3500,801,3510,13031
+Ford,Ranger,680,7077,12542
+Lincoln,Town Car,274,1293,13449
+Mercury,Tracer,626,8781,13180
+GMC,Savana 3500,965,1032,13177
+Chrysler,PT Cruiser,702,1085,11586
+Pontiac,Sunbird,159,5635,10730
+GMC,Rally Wagon 1500,588,3149,12816
+Lincoln,Mark LT,859,9763,13687
+Volvo,V40,586,3053,13694
+Mitsubishi,Montero,78,1466,11386
+Oldsmobile,Bravada,589,9634,10744
+Ford,Ranger,44,6797,14123
+Lexus,IS,575,8075,10639
+Ford,GT500,824,8332,12244
+Mazda,B-Series,527,1806,11249
+Oldsmobile,Silhouette,51,1597,14446
+Lexus,IS,387,2055,10177
+Audi,A4,123,2169,10105
+Jeep,Compass,268,9173,14516
+Pontiac,1000,536,6107,11062
+Ford,Mustang,851,1378,10819
+Isuzu,Rodeo,555,1766,11239
+Dodge,Grand Caravan,876,1481,11845
+Plymouth,Voyager,822,2341,10208
+Maserati,430,385,8925,14405
+Ferrari,F430,820,9626,11622
+Chevrolet,Caprice Classic,362,4462,14681
+MINI,Cooper Clubman,398,2793,10277
+Land Rover,Discovery,843,6659,12627
+Kia,Sportage,168,7492,10803
+Mitsubishi,Chariot,526,7220,12093
+Mitsubishi,Mirage,558,7327,12479
+BMW,3 Series,748,5172,13096
+Saturn,L-Series,263,8106,14142
+Chrysler,Town & Country,984,2407,12653
+Maybach,62,963,4067,11487
+Oldsmobile,Achieva,837,1474,12640
+Toyota,Highlander,948,1528,14976
+Buick,LeSabre,56,9156,12440
+Pontiac,Montana,795,7957,12444
+Acura,RDX,146,4121,10464
+Chevrolet,Silverado 2500,922,8388,14949
+Mitsubishi,Challenger,988,1479,13870
+Geo,Metro,159,8138,10703
+Mercury,Capri,501,8037,12901
+Land Rover,Range Rover Sport,156,6977,14181
+Oldsmobile,Toronado,807,4599,10498
+Ford,Club Wagon,944,5137,12261
+Ford,Mustang,848,4636,10876
+BMW,530,180,3030,14559
+Mercedes-Benz,C-Class,632,8988,10322
+Mercedes-Benz,S-Class,784,1719,13435
+Mercedes-Benz,C-Class,23,6754,10271
+Land Rover,Range Rover,204,5194,12038
+Jeep,Grand Cherokee,520,7805,10201
+Chevrolet,Corvette,96,9899,12045
+Mercedes-Benz,400E,779,2257,11639
+Pontiac,6000,331,4961,12027
+BMW,5 Series,354,8587,14607
+Audi,Cabriolet,872,5769,12127
+Chevrolet,Monte Carlo,745,1099,11847
+Chrysler,New Yorker,729,5442,12665
+Jaguar,XK Series,590,2017,12233
+Oldsmobile,Bravada,441,7037,13576
+Daewoo,Lanos,547,5619,12652
+Nissan,Titan,216,4154,14758
+Toyota,RAV4,63,8157,12493
+Lincoln,Continental,607,8099,13802
+Pontiac,Grand Prix,256,9012,11025
+Ford,Bronco,8,7034,12353
+Mitsubishi,Truck,107,9276,12307
+Ford,Escape,445,3939,13190
+Ford,Mustang,728,8033,14386
+GMC,Vandura 1500,920,9263,10409
+Chevrolet,Lumina,741,5792,13839
+Chrysler,Sebring,521,1891,11068
+GMC,Suburban 1500,164,8552,12712
+GMC,Savana 1500,750,6280,13652
+Kia,Optima,835,5258,14043
+Mitsubishi,Mirage,956,3144,11116
+Kia,Sedona,96,9184,12146

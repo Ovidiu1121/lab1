@@ -34,7 +34,7 @@ class MasinaService:
             return a.marca > b.marca or (a.marca == b.marca and a.model > b.model or (a.model == b.model and a.tokenMasina == b.tokenMasina))
         return a.getProfit() > b.getProfit()
 
-    def sort_masini(self, criteriu):
+    def __bubble_sort(self, criteriu):
         start_time = time.time()
         lista_masini = self.__masina_repo.lista_masini
         for i in range(len(lista_masini) - 1):
@@ -45,3 +45,34 @@ class MasinaService:
                     lista_masini[j] = aux
         end_time = time.time()
         return lista_masini, end_time - start_time
+
+    def __sort_quicksort(self, criteriu):
+        start_time = time.time()
+        lista_masini = self.__masina_repo.lista_masini[:]
+
+        def quicksort(lista, low, high):
+            if low < high:
+                pivot = lista[high]
+                i = low - 1
+
+                for j in range(low, high):
+                    if not self.__comparator_masini(lista[j], pivot, criteriu):
+                        i += 1
+                        lista[i], lista[j] = lista[j], lista[i]
+
+                lista[i + 1], lista[high] = lista[high], lista[i + 1]
+                pi = i + 1
+
+                quicksort(lista, low, pi - 1)
+                quicksort(lista, pi + 1, high)
+
+        quicksort(lista_masini, 0, len(lista_masini) - 1)
+
+        end_time = time.time()
+        return lista_masini, end_time - start_time
+
+    def sort_masini(self,criteriu,eficient_ineficient):
+        if eficient_ineficient == 1:
+            return self.__bubble_sort(criteriu)
+        else:
+            return self.__sort_quicksort(criteriu)

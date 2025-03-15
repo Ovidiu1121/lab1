@@ -32,26 +32,22 @@ class AppConsole:
             print(masina)
 
     def __sort_token_masina(self, eficient_ineficient):
-        if eficient_ineficient == 2:
-            masini, time = self.__masina_service.sort_masini("tokenMasina")
+            masini, time = self.__masina_service.sort_masini("tokenMasina",eficient_ineficient)
             self.__print_masini(masini)
             self.__print_time(time)
 
     def __sort_marca_model(self, eficient_ineficient):
-        if eficient_ineficient == 2:
-            masini, time = self.__masina_service.sort_masini("marca model")
+            masini, time = self.__masina_service.sort_masini("marca model",eficient_ineficient)
             self.__print_masini(masini)
             self.__print_time(time)
 
     def __sort_marca_model_token_masina(self, eficient_ineficient):
-        if eficient_ineficient == 2:
-            masini, time = self.__masina_service.sort_masini("marca model tokenMasina")
+            masini, time = self.__masina_service.sort_masini("marca model tokenMasina",eficient_ineficient)
             self.__print_masini(masini)
             self.__print_time(time)
 
     def __sort_profit(self, eficient_ineficient):
-        if eficient_ineficient == 2:
-            masini, time = self.__masina_service.sort_masini("profit")
+            masini, time = self.__masina_service.sort_masini("profit",eficient_ineficient)
             self.__print_masini(masini)
             self.__print_time(time)
 

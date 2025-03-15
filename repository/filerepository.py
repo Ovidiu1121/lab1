@@ -14,7 +14,7 @@ class MasinaFileRepository:
         try:
             with open(self.__file_name) as f:
                 for line in f:
-                    array = line.split(" ")
+                    array = line.split(",")
                     try:
                         masina = Masina(str(array[0]), str(array[1]), str(array[2]), int(array[3]), int(array[4]))
                         self.lista_masini.append(masina)
@@ -26,8 +26,8 @@ class MasinaFileRepository:
     def save(self, masina):
         try:
             with open(self.__file_name, "a") as f:
-                f.write("\n" + str(masina.model) + " " + str(masina.marca) + " " + str(masina.tokenMasina)+ " " + str(masina)+
-                        " " + str(masina.marca) + " " + str(masina.pretAchizitie)+" "+str(masina.pretVanzare))
+                f.write("\n" + str(masina.model) + "," + str(masina.marca) + "," + str(masina.tokenMasina)+ "," + str(masina)+
+                        "," + str(masina.marca) + "," + str(masina.pretAchizitie)+","+str(masina.pretVanzare))
         except Exception as e:
             print(f"Error saving client {masina.tokenMasina}: {e}")
 
