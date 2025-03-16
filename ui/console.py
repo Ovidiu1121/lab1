@@ -21,8 +21,9 @@ class AppConsole:
 
     def __search_token_masina(self, eficient_ineficient):
         token = input("Token: ")
-        masina = self.__masina_service.find_by_token(token, eficient_ineficient)
+        masina, time = self.__masina_service.find_by_token(token, eficient_ineficient)
         print(masina)
+        self.__print_time(time)
 
     def __print_time(self, time):
         print(f"Timp: {time * 1000} milisecunde")

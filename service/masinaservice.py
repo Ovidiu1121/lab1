@@ -7,11 +7,13 @@ class MasinaService:
     def find_by_token(self, token, eficient_ineficient):
         try:
             masina = None
+            start_time = time.time()
             if eficient_ineficient == 1:
                 masina = self.__masina_repo.find_by_token_binary(token)
             else:
                 masina = self.__masina_repo.find_by_token_secvential(token)
-            return masina
+            end_time = time.time()
+            return masina, end_time - start_time
         except ValueError as e:
             raise ValueError(f"Cannot find client: {e}")
 

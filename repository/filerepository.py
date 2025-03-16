@@ -41,15 +41,16 @@ class MasinaFileRepository:
         return sol
 
     def find_by_token_binary(self, token):
+        masini = sorted(self.lista_masini, key=lambda masina: masina.tokenMasina)
         low = 0
-        high = len(self.lista_masini) - 1
+        high = len(masini) - 1
 
         while low <= high:
             mid = (low + high) // 2
-            current_token = self.lista_masini[mid].tokenMasina
+            current_token = masini[mid].tokenMasina
 
             if current_token == token:
-                return self.lista_masini[mid]
+                return masini[mid]
             elif current_token < token:
                 low = mid + 1
             else:
